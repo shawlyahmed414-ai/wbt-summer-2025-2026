@@ -5,7 +5,7 @@
     <title>JavaScript Form Validation</title>
  
     <script>
-        function validateForm(event) {
+        document.getElementById("myForm").addEventListener("submit", function(event) {
  
             var fname = document.getElementById("fname").value;
             var lname = document.getElementById("lname").value;
@@ -51,7 +51,7 @@
                 event.preventDefault();
                 return;
             }
-        }
+        });
     </script>
 </head>
  
